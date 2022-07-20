@@ -9,6 +9,10 @@
  *    - ada widget Text() untuk membuat tulisan.
  *    - ada widget 'Colors.' dan 'color()' untuk memberi warna.
  * 8. untuk center gunakan Center()
+ * 
+ * Ada yg dinamakan Name Argument:
+ * - home:
+ * - body:
  */
 import 'package:flutter/material.dart';
 

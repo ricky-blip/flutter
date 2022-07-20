@@ -1,12 +1,8 @@
 /**SECTION Intro Basic Widget
  * Ada yg dinamakan Name Argument:
- * - home:
- * - body:
- * - appbar:
- * - child:
- * - title:
+ * - appbar: , title: , child: , image: 
  * 
- * NOTE 1.widget AppBar di appbar: di dalam Scaffold untuk judul
+ * NOTE 1.widget AppBar di appbar: di dalam Scaffold untuk judul 
  * NOTE 2.widget Container di body: di dalam Scaffold untuk membuat kotak/container
  * NOTE 3.widget FlutterLogo di body: di dalam Scaffold untuk membuat logo default flutter
  * NOTE 4.widget ElevateButton di body: utk membuat tombol dgn onPressed == sebuah fungsi, child == sebuah tombol
@@ -32,14 +28,14 @@ class BasicWidget extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text("Apps"),
-          centerTitle: true,
-          backgroundColor: Colors.blue[900],
+          title: Text("This is App Bar"),
         ),
-        body: Center(
-          child: Image(
-            image: //AssetImage("assets/image1.jpg"),
-                NetworkImage("https://picsum.photos/200/300?grayscale"),
+        body: Container(
+          width: 150,
+          height: 100,
+          color: Colors.amber,
+          child: Center(
+            child: Text("This is Container"),
           ),
         ),
       ),
