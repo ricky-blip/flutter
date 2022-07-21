@@ -30,12 +30,11 @@ class BasicWidget extends StatelessWidget {
         appBar: AppBar(
           title: Text("This is App Bar"),
         ),
-        body: Container(
-          width: 150,
-          height: 100,
-          color: Colors.amber,
-          child: Center(
-            child: Text("This is Container"),
+        body: Center(
+          child: Icon(
+            Icons.home,
+            size: 100,
+            color: Colors.blue[900],
           ),
         ),
       ),
