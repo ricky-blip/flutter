@@ -31,10 +31,8 @@ class BasicWidget extends StatelessWidget {
           title: Text("This is App Bar"),
         ),
         body: Center(
-          child: Icon(
-            Icons.home,
-            size: 100,
-            color: Colors.blue[900],
+          child: Image(
+            image: NetworkImage("https://picsum.photos/200/300"),
           ),
         ),
       ),
