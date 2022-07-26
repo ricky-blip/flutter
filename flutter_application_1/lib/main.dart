@@ -1,7 +1,13 @@
+/// jika kita tidak ingin membuat banyak container berulang-ulang
+/// gunakan extract widget di satu container saja
+/// lalu buat namaClass nya, dan akan dibuatkan otomatis classnya
+/// karna container hanya berbeda di text dan warna nya saja
+/// kita atur text dan warna:
 import 'package:flutter/material.dart';
+import 'widgets/box_color.dart';
 
 void main() {
-  runApp(ExtractWidget());
+  runApp(const ExtractWidget());
 }
 
 class ExtractWidget extends StatelessWidget {
@@ -14,27 +20,16 @@ class ExtractWidget extends StatelessWidget {
         appBar: AppBar(
           title: const Text("Extract Widget"),
         ),
-        body: Column(
-          children: [
-            Container(
-              width: 200,
-              height: 200,
-              color: Colors.red,
-              child: const Text("RED"),
-            ),
-            Container(
-              width: 200,
-              height: 200,
-              color: Colors.yellow,
-              child: const Text("YELLOW"),
-            ),
-            Container(
-              width: 200,
-              height: 200,
-              color: Colors.green,
-              child: const Text("GREEN"),
-            ),
-          ],
+        body: SingleChildScrollView(
+          scrollDirection: Axis.vertical,
+          child: Column(
+            children: const [
+              BoxColor(text: "RED", warna: Colors.red),
+              BoxColor(text: "YELLOW", warna: Colors.yellow),
+              BoxColor(text: "GREEN", warna: Colors.green),
+              BoxColor(text: "BLUE", warna: Colors.blue),
+            ],
+          ),
         ),
       ),
     );
