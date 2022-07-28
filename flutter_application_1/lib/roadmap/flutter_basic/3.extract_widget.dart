@@ -4,7 +4,7 @@
 /// karna container hanya berbeda di text dan warna nya saja
 /// kita atur text dan warna:
 import 'package:flutter/material.dart';
-import 'box_color.dart';
+import '../../widget/box_color.dart';
 
 void main() {
   runApp(const ExtractWidget());

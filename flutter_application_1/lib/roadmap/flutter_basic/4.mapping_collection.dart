@@ -18,7 +18,7 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/roadmap/flutter_basic/box_color.dart';
+import 'package:flutter_application_1/widget/box_color.dart';
 
 void main() {
   runApp(MappingCollection());
