@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class ExerciseOne extends StatelessWidget {
-  const ExerciseOne({Key? key}) : super(key: key);
+class ExerciseThree extends StatelessWidget {
+  const ExerciseThree({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -9,7 +9,7 @@ class ExerciseOne extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.black87,
         leading: FlutterLogo(),
-        title: const Text("Exercise 1"),
+        title: const Text("Exercise 3"),
         actions: [
           IconButton(
             onPressed: () {
@@ -20,11 +20,8 @@ class ExerciseOne extends StatelessWidget {
         ],
       ),
       body: const Center(
-        child: Text(
-          "Hello World!",
-          style: TextStyle(
-            fontSize: 40,
-          ),
+        child: FlutterLogo(
+          size: 200,
         ),
       ),
     );

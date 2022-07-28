@@ -1,7 +1,9 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 
-class ExerciseOne extends StatelessWidget {
-  const ExerciseOne({Key? key}) : super(key: key);
+class ExerciseFour extends StatelessWidget {
+  const ExerciseFour({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -9,7 +11,7 @@ class ExerciseOne extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.black87,
         leading: FlutterLogo(),
-        title: const Text("Exercise 1"),
+        title: const Text("Exercise 4"),
         actions: [
           IconButton(
             onPressed: () {
@@ -19,11 +21,12 @@ class ExerciseOne extends StatelessWidget {
           ),
         ],
       ),
-      body: const Center(
-        child: Text(
-          "Hello World!",
-          style: TextStyle(
-            fontSize: 40,
+      body: Center(
+        child: Transform.rotate(
+          //formula pi 90 derajat = pi / (180 / 90)
+          angle: pi / (180 / 90),
+          child: const FlutterLogo(
+            size: 200,
           ),
         ),
       ),
