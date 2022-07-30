@@ -24,6 +24,7 @@ import 'roadmap/flutter_basic/exercise/exercise_20.dart';
 import 'roadmap/flutter_basic/exercise/exercise_21.dart';
 import 'roadmap/flutter_basic/exercise/exercise_22.dart';
 import 'roadmap/flutter_basic/exercise/exercise_23.dart';
+import 'roadmap/flutter_basic/exercise/exercise_24.dart';
 
 void main() {
   runApp(const MyApp());
@@ -36,7 +37,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: ExerciseTwentyThree(),
+      home: ExerciseTwentyFour(),
     );
   }
 }
