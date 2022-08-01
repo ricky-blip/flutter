@@ -26,6 +26,8 @@ class SnackBarWidget extends StatelessWidget {
               ),
               backgroundColor: Colors.black,
               duration: Duration(seconds: 5),
+              margin: EdgeInsets.all(200),
+              behavior: SnackBarBehavior.floating,
             ),
           );
         },
