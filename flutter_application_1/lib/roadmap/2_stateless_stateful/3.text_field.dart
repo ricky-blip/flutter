@@ -29,7 +29,7 @@ class _TextFieldWidgetState extends State<TextFieldWidget> {
             controller: emailC,
             autocorrect: false,
             keyboardType: TextInputType.emailAddress,
-            // textInputAction: TextInputAction.next,
+            textInputAction: TextInputAction.next,
             decoration: InputDecoration(
               labelText: "Email",
               contentPadding:
