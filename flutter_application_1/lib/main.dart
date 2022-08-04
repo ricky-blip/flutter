@@ -31,6 +31,7 @@ import 'roadmap/2_stateless_stateful/4.tab_bar.dart';
 import 'roadmap/2_stateless_stateful/5.dropdown.dart';
 import 'roadmap/2_stateless_stateful/6.bottom_navigation_bar.dart';
 import 'roadmap/2_stateless_stateful/7.bottom_sheet.dart';
+import 'roadmap/2_stateless_stateful/8.drawer.dart';
 
 void main() {
   runApp(const MyApp());
@@ -43,7 +44,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: true,
-      home: BottomSheetWidget(),
+      home: DrawerWidget(),
     );
   }
 }

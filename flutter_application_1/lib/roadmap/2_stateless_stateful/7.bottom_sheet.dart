@@ -27,9 +27,9 @@ class BottomSheetWidget extends StatelessWidget {
                     children: [
                       Center(
                         child: Text(
-                          "Upload File",
+                          "This is Bottom Sheet (Upload File)",
                           style: TextStyle(
-                              fontSize: 20, fontWeight: FontWeight.bold),
+                              fontSize: 15, fontWeight: FontWeight.bold),
                         ),
                       ),
                       ListTile(
