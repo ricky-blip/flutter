@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/roadmap/3_http_request/1.http_post.dart';
 import 'roadmap/1_flutter_basic/exercise/exercise_1.dart';
 import 'roadmap/1_flutter_basic/exercise/exercise_2.dart';
 import 'roadmap/1_flutter_basic/exercise/exercise_3.dart';
@@ -33,6 +34,9 @@ import 'roadmap/2_stateless_stateful/6.bottom_navigation_bar.dart';
 import 'roadmap/2_stateless_stateful/7.bottom_sheet.dart';
 import 'roadmap/2_stateless_stateful/8.drawer.dart';
 import 'roadmap/2_stateless_stateful/9.navigation.dart';
+import 'roadmap/3_http_request/0.http_get.dart';
+import 'roadmap/3_http_request/1.http_post.dart';
+import 'roadmap/3_http_request/2.http_patch.dart';
 
 void main() {
   runApp(const MyApp());
@@ -44,8 +48,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: true,
-      home: NavigationWidget(),
+      debugShowCheckedModeBanner: false,
+      home: HttpRequestPatch(),
     );
   }
 }
