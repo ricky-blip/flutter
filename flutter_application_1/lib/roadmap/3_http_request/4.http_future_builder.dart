@@ -12,34 +12,15 @@ class HttpRequestFutureBuilder extends StatefulWidget {
 }
 
 class _HttpRequestFutureBuilderState extends State<HttpRequestFutureBuilder> {
+  late Map allUser = {};
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text("Http Future Builder"),
       ),
-      body: ListView(
-        padding: EdgeInsets.all(30),
-        children: [
-          ElevatedButton(
-            onPressed: () async {
-              //Get data with click button
-              var getData = await myhttp.get(
-                Uri.parse("https://reqres.in/api/users"),
-              );
-              //convert to json list and get "data:" list user
-              var data =
-                  (json.decode(getData.body) as Map<String, dynamic>)["data"];
-              //looping forEach <list> and convert to Mapping list
-              data.forEach((element) {
-                Map<String, dynamic> user = element; //convert to Mapping
-                print(user);
-              });
-            },
-            child: Text("Get Data"),
-          ),
-        ],
-      ),
+      // body: FutureBuilder(builder: ""),
     );
   }
 }
