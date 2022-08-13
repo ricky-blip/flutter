@@ -2,6 +2,7 @@ import 'dart:async';
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/models/user.dart';
 import 'package:http/http.dart' as myhttp;
 
 class HttpModels extends StatefulWidget {
@@ -12,7 +13,7 @@ class HttpModels extends StatefulWidget {
 }
 
 class _HttpModelsState extends State<HttpModels> {
-  List<Map> allUser = [];
+  List<UserModel> allUser = [];
 
   Future getDataUser() async {
     try {
@@ -20,11 +21,9 @@ class _HttpModelsState extends State<HttpModels> {
         Uri.parse("https://reqres.in/api/users?page=1"),
       );
       List data = (json.decode(getResponse.body) as Map)["data"];
-      data.forEach(
-        (element) {
-          allUser.add(element);
-        },
-      );
+      data.forEach((element) {
+        allUser.add(UserModel.fromJson(element)); //change with model #1
+      });
     } catch (e) {
       print("Error");
       print(e);
@@ -55,11 +54,12 @@ class _HttpModelsState extends State<HttpModels> {
               itemCount: allUser.length,
               itemBuilder: (context, index) => ListTile(
                 leading: CircleAvatar(
-                  backgroundImage: NetworkImage(allUser[index]['avatar']),
+                  //change with model #2
+                  backgroundImage: NetworkImage(allUser[index].avatar),
                 ),
                 title: Text(
-                    "${allUser[index]["first_name"]} ${allUser[index]["last_name"]}"),
-                subtitle: Text("${allUser[index]["emai"]}"),
+                    "${allUser[index].firstName} ${allUser[index].lastName}"),
+                subtitle: Text("${allUser[index].email}"),
               ),
             );
           }
