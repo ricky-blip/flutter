@@ -1,15 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:faker/faker.dart';
+import 'package:intl/intl.dart';
 
-class FakerDummyData extends StatelessWidget {
-  //NOTE Create Field Faker
+class IntlDateFormat extends StatelessWidget {
   var faker = new Faker();
+
+  //NOTE create field date and change DataTime to String
+  String date = DateTime.now().toIso8601String();
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("FAKER"),
+        title: Text("INTL (Date Format)"),
       ),
       body: ListView.builder(
         itemCount: 10,
@@ -19,9 +22,10 @@ class FakerDummyData extends StatelessWidget {
             backgroundImage:
                 NetworkImage("https://picsum.photos/id/${870 + index}/200/300"),
           ),
-          //NOTE Access Faker
           title: Text("${faker.person.name()}"),
-          subtitle: Text("${faker.internet.email()}"),
+          //NOTE access INTL packages
+          subtitle:
+              Text("${DateFormat.yMd().add_Hm().format(DateTime.parse(date))}"),
         ),
       ),
     );
