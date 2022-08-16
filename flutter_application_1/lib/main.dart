@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/roadmap/4_packages_flutter.dart/5.intro_screen.dart';
 import 'roadmap/1_flutter_basic/exercise/exercise_1.dart';
 import 'roadmap/1_flutter_basic/exercise/exercise_2.dart';
 import 'roadmap/1_flutter_basic/exercise/exercise_3.dart';
@@ -53,9 +54,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: AvatarGlowPackage(),
+      home: IntroScreen(),
     );
   }
 }
