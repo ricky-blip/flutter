@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/roadmap/4_packages_flutter.dart/5.intro_screen.dart';
+import 'package:flutter_application_1/roadmap/4_packages_flutter.dart/6.dropdown_search.dart';
 import 'roadmap/1_flutter_basic/exercise/exercise_1.dart';
 import 'roadmap/1_flutter_basic/exercise/exercise_2.dart';
 import 'roadmap/1_flutter_basic/exercise/exercise_3.dart';
@@ -54,9 +55,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: IntroScreen(),
+      home: DropDownSearchPackage(),
     );
   }
 }
