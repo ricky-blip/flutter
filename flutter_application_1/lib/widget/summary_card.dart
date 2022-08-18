@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+//SECTION Card Confirm
 class SummaryCardConfirm extends StatelessWidget {
   String titleCard1;
   String subtitleCard1;
@@ -45,6 +46,7 @@ class SummaryCardConfirm extends StatelessWidget {
   }
 }
 
+//SECTION Card Deaths
 class SummaryCardDeaths extends StatelessWidget {
   String titleCard2;
   String subtitleCard2;
