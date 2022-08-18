@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/roadmap/3_http_request/6.covid_API/1.summary.dart';
 import 'package:flutter_application_1/roadmap/4_packages_flutter.dart/5.intro_screen.dart';
 import 'package:flutter_application_1/roadmap/4_packages_flutter.dart/6.dropdown_search.dart';
 import 'roadmap/1_flutter_basic/exercise/exercise_1.dart';
@@ -57,7 +58,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: DropDownSearchPackage(),
+      home: SummaryCovidAPI(),
     );
   }
 }
