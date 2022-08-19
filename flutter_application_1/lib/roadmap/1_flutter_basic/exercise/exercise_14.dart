@@ -9,7 +9,7 @@ class ExerciseFourteen extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.black87,
         leading: FlutterLogo(),
-        title: const Text("Exercise 14 test"),
+        title: const Text("Exercise 14"),
         actions: [
           IconButton(
             onPressed: () {
