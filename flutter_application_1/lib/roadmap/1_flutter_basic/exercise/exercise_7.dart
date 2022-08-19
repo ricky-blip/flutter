@@ -20,7 +20,7 @@ class ExerciseSeven extends StatelessWidget {
         ],
       ),
       body: Row(
-        // NOTE untuk jarak horizontal bisa gunakan margin atau SizedBox
+        // NOTE use margin or SizedBox for gap(spacing) horizontal
         children: [
           Container(
             // margin: EdgeInsets.only(right: 15),

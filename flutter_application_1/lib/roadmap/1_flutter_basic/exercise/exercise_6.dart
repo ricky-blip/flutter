@@ -20,11 +20,11 @@ class ExerciseSix extends StatelessWidget {
         ],
       ),
       body: Center(
-        //bisa dibungkus juga Container dengan ClipOval
+        //can use wrap with widget ClipOval()
         child: Container(
           width: 250,
           height: 250,
-          //menggunakan boxdecoration borderRadius
+          //using boxdecoration borderRadius
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(250),
             color: Colors.blue,

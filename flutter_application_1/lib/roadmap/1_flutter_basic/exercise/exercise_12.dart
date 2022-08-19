@@ -32,7 +32,7 @@ class ExerciseTwelve extends StatelessWidget {
                 color: Colors.blueAccent,
                 child: const Center(
                   child: Text(
-                    "Column 1, Row 1",
+                    "Row 1, Column 1",
                     style: TextStyle(
                       fontSize: 10,
                       color: Colors.white,
@@ -47,7 +47,7 @@ class ExerciseTwelve extends StatelessWidget {
                 color: Colors.amberAccent,
                 child: const Center(
                   child: Text(
-                    "Column 1, Row 2",
+                    "Row 2, Column 1",
                     style: TextStyle(
                       fontSize: 10,
                       color: Colors.black,
@@ -68,7 +68,7 @@ class ExerciseTwelve extends StatelessWidget {
                 color: Colors.amberAccent,
                 child: const Center(
                   child: Text(
-                    "Column 2, Row 1",
+                    "Row 1, Column 2",
                     style: TextStyle(
                       fontSize: 10,
                       color: Colors.black,
@@ -83,7 +83,7 @@ class ExerciseTwelve extends StatelessWidget {
                 color: Colors.blueAccent,
                 child: const Center(
                   child: Text(
-                    "Column 2, Row 2",
+                    "Row 2, Column 2",
                     style: TextStyle(
                       fontSize: 10,
                       color: Colors.white,
