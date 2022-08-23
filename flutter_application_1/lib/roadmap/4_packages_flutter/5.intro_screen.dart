@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/roadmap/4_packages_flutter.dart/4.avatar_glow.dart';
+import 'package:flutter_application_1/roadmap/4_packages_flutter/4.avatar_glow.dart';
 import 'package:introduction_screen/introduction_screen.dart';
 import 'package:lottie/lottie.dart';
 

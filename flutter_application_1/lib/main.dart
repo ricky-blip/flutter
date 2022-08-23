@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/roadmap/3_http_request/6.covid_API/1.summary.dart';
-import 'package:flutter_application_1/roadmap/4_packages_flutter.dart/5.intro_screen.dart';
-import 'package:flutter_application_1/roadmap/4_packages_flutter.dart/6.dropdown_search.dart';
+import 'package:flutter_application_1/roadmap/4_packages_flutter/5.intro_screen.dart';
+import 'package:flutter_application_1/roadmap/4_packages_flutter/6.dropdown_search.dart';
+import 'package:flutter_application_1/roadmap/5_State_Management_GetX/1.counter_app.dart';
+import 'package:get/get_navigation/get_navigation.dart';
 import 'roadmap/1_flutter_basic/exercise/exercise_1.dart';
 import 'roadmap/1_flutter_basic/exercise/exercise_2.dart';
 import 'roadmap/1_flutter_basic/exercise/exercise_3.dart';
@@ -42,10 +44,10 @@ import 'roadmap/3_http_request/2.http_patch.dart';
 import 'roadmap/3_http_request/3.http_delete.dart';
 import 'roadmap/3_http_request/4.http_future_builder.dart';
 import 'roadmap/3_http_request/5.http_models.dart';
-import 'roadmap/4_packages_flutter.dart/1.faker.dart';
-import 'roadmap/4_packages_flutter.dart/2.date_format.dart';
-import 'roadmap/4_packages_flutter.dart/3.convex_bottombar.dart';
-import 'roadmap/4_packages_flutter.dart/4.avatar_glow.dart';
+import 'roadmap/4_packages_flutter/1.faker.dart';
+import 'roadmap/4_packages_flutter/2.date_format.dart';
+import 'roadmap/4_packages_flutter/3.convex_bottombar.dart';
+import 'roadmap/4_packages_flutter/4.avatar_glow.dart';
 
 void main() {
   runApp(const MyApp());
@@ -56,9 +58,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      home: ExerciseFourteen(),
+      home: GetXStateManagement(),
     );
   }
 }
