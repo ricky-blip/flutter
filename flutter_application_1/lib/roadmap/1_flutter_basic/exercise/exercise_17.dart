@@ -27,7 +27,7 @@ class ExerciseSeventeen extends StatelessWidget {
           crossAxisSpacing: 15,
         ),
         itemBuilder: (context, index) {
-          // Logic Warna selang seling dengan value index
+          // Logic odd even with value index
           if (index % 2 == 0) {
             return Container(
               width: 150,
@@ -35,7 +35,7 @@ class ExerciseSeventeen extends StatelessWidget {
               color: Colors.blue,
               child: const Center(
                 child: Text(
-                  "Hello",
+                  "Blue",
                   style: TextStyle(
                     fontSize: 15,
                     color: Colors.white,
@@ -50,7 +50,7 @@ class ExerciseSeventeen extends StatelessWidget {
               color: Colors.amber,
               child: const Center(
                 child: Text(
-                  "Hello",
+                  "Yellow",
                   style: TextStyle(
                     fontSize: 15,
                     color: Colors.black,

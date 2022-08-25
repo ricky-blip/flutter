@@ -44,7 +44,7 @@ class ExerciseNineteen extends StatelessWidget {
               "Hello ${index + 1}",
               style: const TextStyle(
                 fontSize: 20,
-                color: Colors.white,
+                color: Colors.black,
               ),
             ),
           ),

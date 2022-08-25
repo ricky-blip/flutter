@@ -24,16 +24,17 @@ class ExerciseTwentyTwo extends StatelessWidget {
           width: 250,
           height: 250,
           decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(250 / 2),
-              border: Border.all(
-                color: Color(0xff0D47A1),
-                width: 10,
-              ),
-              color: Colors.blueGrey,
-              image: DecorationImage(
-                fit: BoxFit.cover,
-                image: NetworkImage("https://picsum.photos/536/354"),
-              )),
+            borderRadius: BorderRadius.circular(250 / 2),
+            border: Border.all(
+              color: Color(0xff0D47A1),
+              width: 10,
+            ),
+            color: Colors.blueGrey,
+            image: DecorationImage(
+              fit: BoxFit.cover,
+              image: NetworkImage("https://picsum.photos/536/354"),
+            ),
+          ),
         ),
       ),
     );

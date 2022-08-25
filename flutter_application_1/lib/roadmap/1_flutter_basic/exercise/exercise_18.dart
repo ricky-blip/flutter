@@ -23,7 +23,7 @@ class ExerciseEightteen extends StatelessWidget {
         padding: EdgeInsets.all(20),
         itemCount: 10, //LimitItems
         itemBuilder: (context, index) {
-          // Logic untuk selang seling
+          // Logic odd even
           if (index % 2 == 0) {
             return Padding(
               padding: const EdgeInsets.only(bottom: 25),

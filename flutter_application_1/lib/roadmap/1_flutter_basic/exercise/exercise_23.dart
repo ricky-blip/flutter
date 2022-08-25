@@ -37,16 +37,17 @@ class ExerciseTwentyThree extends StatelessWidget {
                   width: 250,
                   height: 250,
                   decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(250 / 2),
-                      border: Border.all(
-                        color: Colors.white,
-                        width: 10,
-                      ),
-                      color: Colors.blueGrey,
-                      image: const DecorationImage(
-                        fit: BoxFit.cover,
-                        image: NetworkImage("https://picsum.photos/536/354"),
-                      )),
+                    borderRadius: BorderRadius.circular(250 / 2),
+                    border: Border.all(
+                      color: Colors.white,
+                      width: 10,
+                    ),
+                    color: Colors.blueGrey,
+                    image: const DecorationImage(
+                      fit: BoxFit.cover,
+                      image: NetworkImage("https://picsum.photos/536/354"),
+                    ),
+                  ),
                 ),
               ],
             ),

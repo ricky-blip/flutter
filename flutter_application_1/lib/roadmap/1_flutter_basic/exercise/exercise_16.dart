@@ -28,7 +28,7 @@ class ExerciseSixteen extends StatelessWidget {
               color: Colors.blue,
               child: const Center(
                 child: Text(
-                  "Column",
+                  "Column 1",
                   style: TextStyle(
                     fontSize: 20,
                     color: Colors.white,
@@ -43,7 +43,7 @@ class ExerciseSixteen extends StatelessWidget {
               color: Colors.amberAccent,
               child: const Center(
                 child: Text(
-                  "Column",
+                  "Column 2",
                   style: TextStyle(
                     fontSize: 20,
                     color: Colors.black,
@@ -58,7 +58,7 @@ class ExerciseSixteen extends StatelessWidget {
               color: Colors.blue,
               child: const Center(
                 child: Text(
-                  "Column",
+                  "Column 3",
                   style: TextStyle(
                     fontSize: 20,
                     color: Colors.white,
@@ -73,7 +73,7 @@ class ExerciseSixteen extends StatelessWidget {
               color: Colors.amberAccent,
               child: const Center(
                 child: Text(
-                  "Column",
+                  "Column 4",
                   style: TextStyle(
                     fontSize: 20,
                     color: Colors.black,
@@ -88,7 +88,7 @@ class ExerciseSixteen extends StatelessWidget {
               color: Colors.blue,
               child: const Center(
                 child: Text(
-                  "Column",
+                  "Column 5",
                   style: TextStyle(
                     fontSize: 20,
                     color: Colors.white,
@@ -103,7 +103,7 @@ class ExerciseSixteen extends StatelessWidget {
               color: Colors.amberAccent,
               child: const Center(
                 child: Text(
-                  "Column",
+                  "Column 6",
                   style: TextStyle(
                     fontSize: 20,
                     color: Colors.black,

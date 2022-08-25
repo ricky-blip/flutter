@@ -21,10 +21,10 @@ class ExerciseTwentyFour extends StatelessWidget {
       ),
       body: Column(
         children: [
+          //SECTION 1: ListView Horizontal
           Container(
             // NOTE Container Row 1
             padding: const EdgeInsets.only(
-              left: 10,
               top: 10,
               bottom: 10,
             ),
@@ -53,13 +53,14 @@ class ExerciseTwentyFour extends StatelessWidget {
               },
             ),
           ),
+          //SECTION 2: ListView Vertical Expanded
           Expanded(
-            // NOTE Container Column Expanded
+            // NOTE Container Column with Expanded
             child: ListView.builder(
               padding: EdgeInsets.all(20),
               itemCount: 10, //LimitItems
               itemBuilder: (context, index) {
-                // Logic untuk selang seling
+                // Logic Odd Even
                 if (index % 2 == 0) {
                   return Padding(
                     padding: const EdgeInsets.only(bottom: 25),
