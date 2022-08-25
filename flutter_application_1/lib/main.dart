@@ -4,6 +4,8 @@ import 'package:flutter_application_1/roadmap/4_packages_flutter/5.intro_screen.
 import 'package:flutter_application_1/roadmap/4_packages_flutter/6.dropdown_search.dart';
 import 'package:flutter_application_1/roadmap/5_State_Management_GetX/1.counter_app.dart';
 import 'package:flutter_application_1/roadmap/5_State_Management_GetX/2.snack_bar.dart';
+import 'package:flutter_application_1/roadmap/5_State_Management_GetX/3.dialog.dart';
+import 'package:flutter_application_1/roadmap/5_State_Management_GetX/4.bottom_sheet.dart';
 import 'package:get/get_navigation/get_navigation.dart';
 import 'roadmap/1_flutter_basic/exercise/exercise_1.dart';
 import 'roadmap/1_flutter_basic/exercise/exercise_2.dart';
@@ -61,7 +63,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      home: ExerciseTwentyFour(),
+      home: BottomSheetStateManagement(),
     );
   }
 }
