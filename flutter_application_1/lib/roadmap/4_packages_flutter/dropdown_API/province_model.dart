@@ -27,4 +27,7 @@ class ProvinceModel {
         "id": id,
         "name": name,
       };
+
+  @override
+  String toString() => name;
 }

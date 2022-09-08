@@ -43,7 +43,7 @@ class _IndonesiaRegionDropDownAPIState
             ),
             //NOTE show data dropdown
             dropdownBuilder: (context, selectedItem) =>
-                Text(selectedItem?.name ?? "Not selected a province yet"),
+                Text(selectedItem?.name ?? "Choose Province"),
             //NOTE convert idProvince to value.id
             onChanged: (value) => idProvince = value?.id,
             //NOTE function use for getting data
@@ -87,7 +87,7 @@ class _IndonesiaRegionDropDownAPIState
             ),
             //NOTE show data dropdown
             dropdownBuilder: (context, selectedItem) =>
-                Text(selectedItem?.name ?? "Not selected a city yet"),
+                Text(selectedItem?.name ?? "Choose City"),
             onChanged: (value) => print(value?.toJson()),
             //NOTE function use for getting data
             asyncItems: (text) async {

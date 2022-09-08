@@ -30,4 +30,7 @@ class CityModel {
         "id_provinsi": idProvinsi,
         "name": name,
       };
+
+  @override
+  String toString() => name;
 }
