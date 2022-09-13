@@ -7,6 +7,10 @@ import 'package:flutter_application_1/roadmap/5_State_Management_GetX/1.counter_
 import 'package:flutter_application_1/roadmap/5_State_Management_GetX/2.snack_bar.dart';
 import 'package:flutter_application_1/roadmap/5_State_Management_GetX/3.dialog.dart';
 import 'package:flutter_application_1/roadmap/5_State_Management_GetX/4.bottom_sheet.dart';
+import 'package:flutter_application_1/roadmap/5_State_Management_GetX/5.state_manager_reactive.dart';
+import 'package:flutter_application_1/roadmap/5_State_Management_GetX/6.state_manager_simple.dart';
+import 'package:flutter_application_1/roadmap/5_State_Management_GetX/7.reactive_variable.dart';
+import 'package:flutter_application_1/roadmap/5_State_Management_GetX/controller/1.reactive_controller.dart';
 import 'package:get/get_navigation/get_navigation.dart';
 import 'roadmap/1_flutter_basic/exercise/exercise_1.dart';
 import 'roadmap/1_flutter_basic/exercise/exercise_2.dart';
@@ -64,7 +68,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      home: IndonesiaRegionDropDownAPI(),
+      home: ReactiveVariablePages(),
     );
   }
 }
