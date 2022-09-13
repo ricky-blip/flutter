@@ -44,6 +44,7 @@ class _IndonesiaRegionDropDownAPIState
             //NOTE show data dropdown
             dropdownBuilder: (context, selectedItem) =>
                 Text(selectedItem?.name ?? "Choose Province"),
+
             //NOTE convert idProvince to value.id
             onChanged: (value) => idProvince = value?.id,
             //NOTE function use for getting data
@@ -71,6 +72,7 @@ class _IndonesiaRegionDropDownAPIState
                 );
               });
               return allModelProvince;
+              DropdownSearchPopupItemBuilder;
             },
           ),
           SizedBox(height: 30),
