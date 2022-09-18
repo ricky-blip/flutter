@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_1/roadmap/5_State_Management_GetX/controller/3.reactive_variable_controller.dart';
 import 'package:get/get.dart';
 
+// ignore: use_key_in_widget_constructors
 class ReactiveVariablePages extends StatelessWidget {
   final reactiveVariableC = Get.put(ReactiveVariableController());
 
@@ -9,13 +10,13 @@ class ReactiveVariablePages extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Reactive Variable"),
+        title: const Text("Reactive Variable"),
       ),
       body: ListView(
-        padding: EdgeInsets.symmetric(horizontal: 15, vertical: 10),
+        padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 10),
         children: [
           //NOTE Integer
-          Center(child: Text("Type Data Integer")),
+          const Center(child: Text("Type Data Integer")),
           SizedBox(height: 10),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
