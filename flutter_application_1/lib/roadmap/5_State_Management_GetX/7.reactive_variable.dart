@@ -102,6 +102,99 @@ class ReactiveVariablePages extends StatelessWidget {
             ],
           ),
           SizedBox(height: 20),
+          //NOTE Boolean
+          Center(child: Text("Type Data Boolean")),
+          SizedBox(height: 10),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Obx(
+                () => Text(
+                  "${reactiveVariableC.dataBool}",
+                  style: TextStyle(fontSize: 25),
+                ),
+              ),
+              SizedBox(height: 20),
+              Row(
+                children: [
+                  ElevatedButton(
+                    onPressed: () => reactiveVariableC.changeDataBool(),
+                    child: Text("Change Boolean"),
+                  ),
+                ],
+              ),
+            ],
+          ),
+          SizedBox(height: 20),
+          //NOTE List
+          Center(child: Text("Type Data List")),
+          SizedBox(height: 10),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Obx(
+                () => Text(
+                  "${reactiveVariableC.dataList}",
+                  style: TextStyle(fontSize: 15),
+                ),
+              ),
+              SizedBox(height: 20),
+              Row(
+                children: [
+                  ElevatedButton(
+                    onPressed: () => reactiveVariableC.addDataList(),
+                    child: Text("Add"),
+                  ),
+                  SizedBox(width: 5),
+                  ElevatedButton(
+                    onPressed: () => reactiveVariableC.changeDataList(),
+                    child: Text("Change:99"),
+                  ),
+                ],
+              ),
+            ],
+          ),
+          SizedBox(height: 20),
+          //NOTE Set
+          Center(child: Text("Type Data Set")),
+          SizedBox(height: 10),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Obx(
+                () => Text(
+                  "${reactiveVariableC.dataSet}",
+                  style: TextStyle(fontSize: 15),
+                ),
+              ),
+              SizedBox(height: 20),
+              Row(
+                children: [
+                  ElevatedButton(
+                    onPressed: () => reactiveVariableC.addDataSet(),
+                    child: Text("Add"),
+                  ),
+                  SizedBox(width: 5),
+                  ElevatedButton(
+                    onPressed: () => reactiveVariableC.changeDataSet(),
+                    child: Text("Change:99"),
+                  ),
+                ],
+              ),
+            ],
+          ),
+          SizedBox(height: 20),
+          ClipRRect(
+            borderRadius: BorderRadius.circular(50),
+            child: Divider(
+              height: 10,
+              color: Colors.black,
+              thickness: 5,
+            ),
+          ),
+          //NOTE Map
+          Center(child: Text("Type Data Map")),
+          
         ],
       ),
     );
