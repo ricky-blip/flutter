@@ -187,14 +187,36 @@ class ReactiveVariablePages extends StatelessWidget {
           ClipRRect(
             borderRadius: BorderRadius.circular(50),
             child: Divider(
-              height: 10,
+              height: 5,
               color: Colors.black,
               thickness: 5,
             ),
           ),
           //NOTE Map
+          SizedBox(height: 20),
           Center(child: Text("Type Data Map")),
-          
+          Row(
+            children: [
+              Expanded(
+                child: Obx(
+                  () => ListTile(
+                    leading: CircleAvatar(
+                      child: Text("${reactiveVariableC.dataMap["id"]}"),
+                    ),
+                    title: Text("${reactiveVariableC.dataMap["name"]}"),
+                    subtitle: Text("${reactiveVariableC.dataMap["age"]}"),
+                  ),
+                ),
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  reactiveVariableC.changeValue();
+                },
+                child: Text("Change Name"),
+              ),
+            ],
+          ),
+          SizedBox(height: 10),
         ],
       ),
     );

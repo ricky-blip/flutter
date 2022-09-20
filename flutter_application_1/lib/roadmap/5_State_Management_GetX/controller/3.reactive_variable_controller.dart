@@ -60,5 +60,16 @@ class ReactiveVariableController extends GetxController {
     dataSet.value = {99, 2};
   }
 
-  
+  //NOTE Type Data Map
+  RxMap<String, dynamic> dataMap = <String, dynamic>{
+    "id": 1,
+    "name": "Ricky",
+    "age": 99,
+  }.obs;
+
+  void changeValue() {
+    dataMap["id"] = 2;
+    dataMap["name"] = "Roy";
+    dataMap["age"] = 98;
+  }
 }
