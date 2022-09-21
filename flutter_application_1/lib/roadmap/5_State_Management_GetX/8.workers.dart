@@ -33,7 +33,7 @@ class WorkersGetX extends StatelessWidget {
               TextField(
                 onChanged: (value) => workersC.change(),
                 decoration: const InputDecoration(
-                  label: Text("Data with Ever_Feature"),
+                  label: Text("Data with Interval_Feature"),
                   border: OutlineInputBorder(),
                 ),
               ),
