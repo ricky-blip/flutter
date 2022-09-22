@@ -10,6 +10,7 @@ import 'package:flutter_application_1/roadmap/5_State_Management_GetX/4.bottom_s
 import 'package:flutter_application_1/roadmap/5_State_Management_GetX/5.state_manager_reactive.dart';
 import 'package:flutter_application_1/roadmap/5_State_Management_GetX/6.state_manager_simple.dart';
 import 'package:flutter_application_1/roadmap/5_State_Management_GetX/7.reactive_variable.dart';
+import 'package:flutter_application_1/roadmap/5_State_Management_GetX/9.0.dependency_management.dart';
 import 'package:flutter_application_1/roadmap/5_State_Management_GetX/controller/1.reactive_controller.dart';
 import 'package:flutter_application_1/roadmap/5_State_Management_GetX/8.workers.dart';
 import 'package:get/get_navigation/get_navigation.dart';
@@ -69,7 +70,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      home: WorkersGetX(),
+      home: DependencyManagementPages(),
     );
   }
 }
