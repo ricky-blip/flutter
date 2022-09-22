@@ -1,14 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import '9.0.dependency_management.dart';
+import 'controller/5.dependency_management_controller.dart.dart';
 
 class DependencyManagementPages2 extends StatelessWidget {
-  //NOTE Accomodate Data
-  DependencyManagementPages2(this.dataPage2);
-
-  //NOTE Access data from anotherClass
-  DependencyManagementPages dataPage2;
+  //Access data from Controller with Get.find()
+  Dependency1 dependency2 = Get.find();
 
   @override
   Widget build(BuildContext context) {
@@ -21,14 +18,14 @@ class DependencyManagementPages2 extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
-              "Data 2 : ${dataPage2.data2["name"]} - ${dataPage2.data2["age"]} old",
+              "Data 2 : ${dependency2.data2["name"]} - ${dependency2.data2["age"]} old",
               style: TextStyle(
                 fontSize: 20,
               ),
             ),
             const SizedBox(height: 10),
             Text(
-              "Data 1 : ${dataPage2.data1["name"]} - ${dataPage2.data1["age"]} old",
+              "Data 1 : ${dependency2.data1["name"]} - ${dependency2.data1["age"]} old",
               style: TextStyle(
                 fontSize: 20,
               ),
