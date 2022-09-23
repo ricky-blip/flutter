@@ -4,6 +4,10 @@ import 'package:flutter_application_1/roadmap/4_packages_flutter/5.intro_screen.
 import 'package:flutter_application_1/roadmap/4_packages_flutter/6.dropdown_search.dart';
 import 'package:flutter_application_1/roadmap/4_packages_flutter/dropdown_API/indonesian_region.dart';
 import 'package:flutter_application_1/roadmap/5_State_Management_GetX/1.counter_app.dart';
+import 'package:flutter_application_1/roadmap/5_State_Management_GetX/10.0.route_management.dart';
+import 'package:flutter_application_1/roadmap/5_State_Management_GetX/10.1.route_page1.dart';
+import 'package:flutter_application_1/roadmap/5_State_Management_GetX/10.2.route_page2.dart';
+import 'package:flutter_application_1/roadmap/5_State_Management_GetX/10.3.route_page3.dart';
 import 'package:flutter_application_1/roadmap/5_State_Management_GetX/2.snack_bar.dart';
 import 'package:flutter_application_1/roadmap/5_State_Management_GetX/3.dialog.dart';
 import 'package:flutter_application_1/roadmap/5_State_Management_GetX/4.bottom_sheet.dart';
@@ -70,7 +74,20 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      home: DependencyManagementPages(),
+      home: RouteHome(),
+      //NOTE Create Route here with NameRoute
+      // routes: {
+      //   "home": (p0) => RouteHome(),
+      //   "pageOne": (p1) => RoutePAGE1(),
+      //   "pageTwo": (p2) => RoutePAGE2(),
+      //   "pageThree": (p3) => RoutePAGE3(),
+      // },
+      getPages: [
+        GetPage(name: "/home", page: () => RouteHome()),
+        GetPage(name: "/pageOne", page: () => RoutePAGE1()),
+        GetPage(name: "/pageTwo", page: () => RoutePAGE2()),
+        GetPage(name: "/pageThree", page: () => RoutePAGE3()),
+      ],
     );
   }
 }
