@@ -35,7 +35,7 @@ class RouteHome extends StatelessWidget {
                 Get.toNamed("/pageThree");
                 Get.offAllNamed("/");
               },
-              child: Text("Route Page 3."),
+              child: Text("Route Page 3"),
             ),
             SizedBox(height: 10),
           ],
