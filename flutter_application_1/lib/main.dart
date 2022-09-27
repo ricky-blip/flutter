@@ -9,6 +9,7 @@ import 'package:flutter_application_1/roadmap/5_State_Management_GetX/10.1.route
 import 'package:flutter_application_1/roadmap/5_State_Management_GetX/10.2.route_page2.dart';
 import 'package:flutter_application_1/roadmap/5_State_Management_GetX/10.3.route_page3.dart';
 import 'package:flutter_application_1/roadmap/5_State_Management_GetX/11.0.binding_builder.dart';
+import 'package:flutter_application_1/roadmap/5_State_Management_GetX/11.1binding_builder.dart';
 import 'package:flutter_application_1/roadmap/5_State_Management_GetX/2.snack_bar.dart';
 import 'package:flutter_application_1/roadmap/5_State_Management_GetX/3.dialog.dart';
 import 'package:flutter_application_1/roadmap/5_State_Management_GetX/4.bottom_sheet.dart';
@@ -18,6 +19,7 @@ import 'package:flutter_application_1/roadmap/5_State_Management_GetX/7.reactive
 import 'package:flutter_application_1/roadmap/5_State_Management_GetX/9.0.dependency_management.dart';
 import 'package:flutter_application_1/roadmap/5_State_Management_GetX/controller/1.reactive_controller.dart';
 import 'package:flutter_application_1/roadmap/5_State_Management_GetX/8.workers.dart';
+import 'package:get/get.dart';
 import 'package:get/get_navigation/get_navigation.dart';
 import 'roadmap/1_flutter_basic/exercise/exercise_1.dart';
 import 'roadmap/1_flutter_basic/exercise/exercise_2.dart';
@@ -63,6 +65,7 @@ import 'roadmap/4_packages_flutter/1.faker.dart';
 import 'roadmap/4_packages_flutter/2.date_format.dart';
 import 'roadmap/4_packages_flutter/3.convex_bottombar.dart';
 import 'roadmap/4_packages_flutter/4.avatar_glow.dart';
+import 'roadmap/5_State_Management_GetX/controller/6.binding_builder_controller.dart';
 
 void main() {
   runApp(const MyApp());
@@ -73,9 +76,16 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const GetMaterialApp(
+    return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      home: PAGE1(),
+      home: const PAGE1(),
+      getPages: [
+        GetPage(
+          name: "/Page2",
+          page: () => Page2(),
+          binding: BindingsBuilder.put(() => BindingBuilderController()),
+        ),
+      ],
       //NOTE Create Route here with NameRoute
       // routes: {
       //   "home": (p0) => RouteHome(),

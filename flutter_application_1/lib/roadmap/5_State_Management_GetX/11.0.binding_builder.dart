@@ -16,12 +16,13 @@ class PAGE1 extends StatelessWidget {
       body: Center(
         child: Container(
           child: ElevatedButton(
-            onPressed: () {
-              Get.to(
-                () => Page2(),
-                binding: BindingsBuilder.put(() => BindingBuilderController()),
-              );
-            },
+            // onPressed: () {
+            //   Get.to(
+            //     () => Page2(),
+            //     binding: BindingsBuilder.put(() => BindingBuilderController()),
+            //   );
+            // },
+            onPressed: () => Get.toNamed("/Page2"),
             child: Text("next page >>>"),
           ),
         ),
