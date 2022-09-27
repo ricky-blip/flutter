@@ -10,6 +10,7 @@ import 'package:flutter_application_1/roadmap/5_State_Management_GetX/10.2.route
 import 'package:flutter_application_1/roadmap/5_State_Management_GetX/10.3.route_page3.dart';
 import 'package:flutter_application_1/roadmap/5_State_Management_GetX/11.0.binding_builder.dart';
 import 'package:flutter_application_1/roadmap/5_State_Management_GetX/11.1binding_builder.dart';
+import 'package:flutter_application_1/roadmap/5_State_Management_GetX/12.class_bindings.dart';
 import 'package:flutter_application_1/roadmap/5_State_Management_GetX/2.snack_bar.dart';
 import 'package:flutter_application_1/roadmap/5_State_Management_GetX/3.dialog.dart';
 import 'package:flutter_application_1/roadmap/5_State_Management_GetX/4.bottom_sheet.dart';
@@ -83,7 +84,9 @@ class MyApp extends StatelessWidget {
         GetPage(
           name: "/Page2",
           page: () => Page2(),
-          binding: BindingsBuilder.put(() => BindingBuilderController()),
+          //access binding from ClassBindings
+          binding: BindingsClass(),
+          // binding: BindingsBuilder.put(() => BindingBuilderController()),
         ),
       ],
       //NOTE Create Route here with NameRoute
