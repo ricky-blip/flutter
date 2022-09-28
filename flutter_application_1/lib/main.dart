@@ -11,6 +11,8 @@ import 'package:flutter_application_1/roadmap/5_State_Management_GetX/10.3.route
 import 'package:flutter_application_1/roadmap/5_State_Management_GetX/11.0.binding_builder.dart';
 import 'package:flutter_application_1/roadmap/5_State_Management_GetX/11.1binding_builder.dart';
 import 'package:flutter_application_1/roadmap/5_State_Management_GetX/12.class_bindings.dart';
+import 'package:flutter_application_1/roadmap/5_State_Management_GetX/13.0.get_storage1.dart';
+import 'package:flutter_application_1/roadmap/5_State_Management_GetX/13.1get_storage2.dart';
 import 'package:flutter_application_1/roadmap/5_State_Management_GetX/2.snack_bar.dart';
 import 'package:flutter_application_1/roadmap/5_State_Management_GetX/3.dialog.dart';
 import 'package:flutter_application_1/roadmap/5_State_Management_GetX/4.bottom_sheet.dart';
@@ -22,6 +24,7 @@ import 'package:flutter_application_1/roadmap/5_State_Management_GetX/controller
 import 'package:flutter_application_1/roadmap/5_State_Management_GetX/8.workers.dart';
 import 'package:get/get.dart';
 import 'package:get/get_navigation/get_navigation.dart';
+import 'package:get_storage/get_storage.dart';
 import 'roadmap/1_flutter_basic/exercise/exercise_1.dart';
 import 'roadmap/1_flutter_basic/exercise/exercise_2.dart';
 import 'roadmap/1_flutter_basic/exercise/exercise_3.dart';
@@ -68,7 +71,8 @@ import 'roadmap/4_packages_flutter/3.convex_bottombar.dart';
 import 'roadmap/4_packages_flutter/4.avatar_glow.dart';
 import 'roadmap/5_State_Management_GetX/controller/6.binding_builder_controller.dart';
 
-void main() {
+void main() async{
+  await GetStorage.init();
   runApp(const MyApp());
 }
 
@@ -79,16 +83,20 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      home: const PAGE1(),
+      home: LoginPages(),
       getPages: [
-        GetPage(
-          name: "/Page2",
-          page: () => Page2(),
-          //access binding from ClassBindings
-          binding: BindingsClass(),
-          // binding: BindingsBuilder.put(() => BindingBuilderController()),
-        ),
+        GetPage(name: "/homepages", page: () => HomePages()),
+        GetPage(name: "/loginpages", page: () => LoginPages()),
       ],
+      // getPages: [
+      //   GetPage(
+      //     name: "/Page2",
+      //     page: () => Page2(),
+      //     //access binding from ClassBindings
+      //     binding: BindingsClass(),
+      //     // binding: BindingsBuilder.put(() => BindingBuilderController()),
+      //   ),
+      // ],
       //NOTE Create Route here with NameRoute
       // routes: {
       //   "home": (p0) => RouteHome(),

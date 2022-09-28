@@ -39,6 +39,7 @@ dependencies:
   lottie: ^1.4.1
   dropdown_search: ^5.0.2
   get: ^4.6.5
+  get_storage: ^2.0.3
 
 dev_dependencies:
 
