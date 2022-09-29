@@ -32,7 +32,7 @@ class LoginController extends GetxController {
             "password": passwordC.text,
           },
         );
-      } else {}
+      }
       Get.offAllNamed("/homepages");
     } else {
       //Failed Login

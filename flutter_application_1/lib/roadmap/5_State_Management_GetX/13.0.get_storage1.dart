@@ -19,12 +19,12 @@ class LoginPages extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text("Login Page"),
+        title: const Text("Login Page"),
       ),
       body: ListView(
         children: [
           Padding(
-            padding: EdgeInsets.all(30),
+            padding: const EdgeInsets.all(30),
             child: Column(
               children: [
                 TextField(
