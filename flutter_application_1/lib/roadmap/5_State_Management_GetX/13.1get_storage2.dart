@@ -9,7 +9,7 @@ class HomePages extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Welcome User"),
+        title: Text("Welcome ..."),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
