@@ -12,7 +12,7 @@ import 'package:flutter_application_1/roadmap/5_State_Management_GetX/11.0.bindi
 import 'package:flutter_application_1/roadmap/5_State_Management_GetX/11.1binding_builder.dart';
 import 'package:flutter_application_1/roadmap/5_State_Management_GetX/12.class_bindings.dart';
 import 'package:flutter_application_1/roadmap/5_State_Management_GetX/13.0.get_storage1.dart';
-import 'package:flutter_application_1/roadmap/5_State_Management_GetX/13.1get_storage2.dart';
+import 'package:flutter_application_1/roadmap/5_State_Management_GetX/13.1.get_storage2.dart';
 import 'package:flutter_application_1/roadmap/5_State_Management_GetX/2.snack_bar.dart';
 import 'package:flutter_application_1/roadmap/5_State_Management_GetX/3.dialog.dart';
 import 'package:flutter_application_1/roadmap/5_State_Management_GetX/4.bottom_sheet.dart';
